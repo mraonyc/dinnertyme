@@ -1,0 +1,14 @@
+<h1>Kitchens</h1>
+
+<% @kitchens.each do |kitchen| %>
+
+<div class="kitchen">
+    <%= link_to kitchen.name, kitchen %>
+</div>
+<% end %>
+
+<br />
+
+<div class="clear">
+<%= link_to 'Create a New Kitchen', new_kitchen_path %>
+</div>

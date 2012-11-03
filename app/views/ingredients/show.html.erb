@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<div class="ingredient">
+  <p><%= @ingredient.name %></p>
+  <p><%= @ingredient.amount %> <%= @ingredient.unit %> </p
+</div>
+
+
+<div class="clear">
+
+<%= link_to 'Edit', edit_ingredient_path(@ingredient) %> |
+<%= link_to 'Back', ingredients_path %> |
+<%= link_to 'Delete Ingredient', @ingredient, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>

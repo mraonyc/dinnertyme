@@ -1,0 +1,112 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require 'css/bootstrap.css'
+ *= require_self
+ *= require_tree .
+ */
+
+body {
+	margin: 0 auto;
+	width: 960px;
+}
+
+.navbar {
+	margin: 0px;
+}
+
+.content {
+	display: block;
+	margin: 10px;
+	padding: 10px;
+}
+
+a {
+	color: black;
+}
+
+.field {
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.clear {
+	clear:both;
+}
+
+.kitchen {
+	display:block;
+	height: 40px;
+	border-bottom: gray solid 1px;
+	width: 300px;
+	padding-top: 30px;
+	padding-left: 5px;
+	}
+
+.span6 {
+	float: left;
+	margin: 0 auto;
+}
+
+.span6 img {
+	height: 300px;
+	width:: 300px;
+}
+
+.span6 li {
+	list-style-type: none;
+	padding: 5px;
+	border-bottom: dashed 1px gray;
+}
+
+.list li {
+	border: none;
+	list-style-type: square;
+}
+
+.recipe-thumbnail {
+	border: dashed 1px gray;
+	padding: 5px;
+	margin: 5px;
+	height: 225px;
+	width:150px;
+	float: left;
+
+}
+
+.kitchen-thumbnail {
+	border: none;
+	padding: 5px;
+	margin: 5px;
+	height: auto;
+	width:150px;
+	float: left;
+
+}
+
+
+.recipe-thumbnail img {
+   height: 150px;
+   width: 150px;
+}
+
+.recipe-thumbnail h1 {
+	font: 16px Arial, sans-serif;
+	color: black;
+}
+
+.ingredient {
+	display:block;
+	height: 50px;
+	border-bottom: gray solid 1px;
+	width: 300px;
+	padding-top: 20px;
+	padding-left: 5px;
+	}

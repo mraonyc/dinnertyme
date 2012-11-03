@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<div class="span12">
+<h1><%= @recipe.name %></h1>
+</div>
+
+<div class="span4">
+  <%= image_tag(@recipe.photo) %>
+</div>
+
+<div class="span6">
+  <ul>
+    <li>Kitchen: <%= @recipe.kitchen.name %></li>
+    <li>Ingredients: 
+      <% @recipe.ingredients.each do |ingredient|%> 
+      <div class="list">
+      <ul>
+      <li><%= ingredient.amount %> <%= ingredient.unit %> <%= ingredient.name %></li>
+    </ul>
+  </div>
+      <%end%></li>
+    <li>Method: <%= @recipe.steps %></li>
+    <li>Serves: <%= @recipe.serves %></li>
+    <li>Rating: <%= @recipe.rating %> stars</li>
+  </ul>
+</div>
+
+<div class="clear">
+
+<%= link_to 'Edit', edit_recipe_path(@recipe) %> |
+<%= link_to 'View all Recipes', recipes_path %> |
+<%= link_to 'Delete Recipe', @recipe, method: :delete, data: { confirm: 'Are you sure?' } %>
+</div>
