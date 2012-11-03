@@ -15,6 +15,6 @@
 class Recipe < ActiveRecord::Base
   attr_accessible :name, :photo, :rating, :serves, :steps, :kitchen_id, :remote_photo_url, :ingredient_ids
   belongs_to :kitchen
-  has_many :ingredients
+  has_and_belongs_to_many :ingredients
   mount_uploader :photo, RecipepikUploader
 end
