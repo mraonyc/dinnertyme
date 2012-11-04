@@ -25,6 +25,10 @@
     <em><%= link_to 'Add New Ingredient', new_ingredient_path %></em>
   </div>
 
+<div class="field">
+    <%= f.label :kitchen %>
+    <%= f.select :kitchen_id, Kitchen.all.map{|kitchen|[kitchen.name, kitchen.id]}, {:prompt => "Please assign recipe to a kitchen"} %>
+  </div>
 
   <div class="field">
     <%= f.label :steps %>
