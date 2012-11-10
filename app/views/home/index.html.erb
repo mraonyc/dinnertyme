@@ -1,7 +1,17 @@
+
+
 <h1>DinnerTyme</h1>
 
 <h2>Find Your Inspiration</h2>
 
 <p>Cook up any idea for breakfast, lunch, or dinner with our creative recipes from the best chefs in the business. </p>
 
+<% @recipes.each do |recipe| %>
+<div class="slider">
+   <%= link_to image_tag(recipe.photo.thumb), recipe %>
+ </div>
+<% end %>
+
+<div class="clear">
 <div class="btn btn-success btn-large"><%= link_to "Explore Kitchens", kitchens_path %></div>
+</div>

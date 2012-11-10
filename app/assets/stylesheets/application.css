@@ -9,6 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require 'css/bootstrap.css'
+ *= require jquery.rambling.slider
  *= require_self
  *= require_tree .
  */
@@ -69,7 +70,7 @@ h2, h3 {
 	margin: 10px;
 	text-align: center;
 	vertical-align: middle;
-	background-color: #F0F8FF;
+	background-color: none;
 	float: left;
 	}
 
@@ -109,7 +110,7 @@ h2, h3 {
 	float: left;
 }
 
-.kitchen-thumbnail {
+.slider {
 	border: none;
 	padding: 5px;
 	margin: 5px;
@@ -118,7 +119,14 @@ h2, h3 {
 	float: left;
 }
 
-
+.kitchen-thumbnail {
+	border: none;
+	padding: 5px;
+	margin: 5px;
+	height: auto;
+	width:150px;
+	float: left;
+}
 
 .ingredient {
 	display:block;

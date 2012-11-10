@@ -13,4 +13,13 @@
 //= require jquery
 //= require jquery_ujs
 //= require 'js/bootstrap.js'
+//= require jquery.rambling.slider
 //= require_tree .
+
+$(document).ready(function(){
+
+$(window).load(function(){
+  $('.slider').ramblingSlider();
+});
+
+});
