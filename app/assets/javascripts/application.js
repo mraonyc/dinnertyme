@@ -19,7 +19,7 @@
 $(document).ready(function(){
 
 $(window).load(function(){
-  $('.slider').ramblingSlider();
+  $('#slider').ramblingSlider();
 });
 
 });
